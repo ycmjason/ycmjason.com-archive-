@@ -1,0 +1,37 @@
+section#profile{
+  text-align: center;
+  background: #B8E1FA;
+}
+section#profile img.circle{
+  border:6px solid #00398E;
+  border-radius:50%;
+}
+section#profile #head-pic{
+  margin: 1em 0 1em 0;
+  width: 300px;
+}
+section#profile .social-icons i{
+  color: #00398E;
+  border:2px solid #00398E;
+  border-radius:50%;
+  line-height:1.6em;
+  width:1.6em;
+  box-sizing: content-box;
+  font-size:2.5em;
+  text-align: center;
+  margin:0 0.1em 0 0.1em;
+}
+section#profile .social-icons a{
+  position: relative;
+  display: inline-block;
+}
+section#profile .social-icons a:hover,
+section#profile .social-icons a:active,
+section#profile .social-icons a:visited,
+section#profile .social-icons a:link{
+  text-decoration:none;
+}
+section#profile .social-icons i:hover{
+  color: skyblue;
+  border-color: skyblue;
+}
