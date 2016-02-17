@@ -1,16 +1,27 @@
-section#profile{
+section.profile{
   text-align: center;
-  background: #B8E1FA;
+  color: #00398E;
+  background-image: url("//scontent-lhr3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/970962_10201730752253170_1713699782_n.jpg?oh=f1506f6e62fdb412b21147bee143bcc9&oe=5722D512");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-section#profile img.circle{
+section.profile .filter{
+  background: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+section.profile img.circle{
   border:6px solid #00398E;
   border-radius:50%;
 }
-section#profile #head-pic{
+section.profile #head-pic{
   margin: 1em 0 1em 0;
-  width: 300px;
+  height: 30%;
 }
-section#profile .social-icons i{
+section.profile .social-icons i{
   color: #00398E;
   border:2px solid #00398E;
   border-radius:50%;
@@ -20,18 +31,13 @@ section#profile .social-icons i{
   font-size:2.5em;
   text-align: center;
   margin:0 0.1em 0 0.1em;
+  background: rgba(255, 255, 255, .8);
 }
-section#profile .social-icons a{
+section.profile .social-icons a{
   position: relative;
   display: inline-block;
 }
-section#profile .social-icons a:hover,
-section#profile .social-icons a:active,
-section#profile .social-icons a:visited,
-section#profile .social-icons a:link{
-  text-decoration:none;
-}
-section#profile .social-icons i:hover{
+section.profile .social-icons i:hover{
   color: skyblue;
   border-color: skyblue;
 }

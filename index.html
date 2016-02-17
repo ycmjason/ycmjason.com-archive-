@@ -14,63 +14,28 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/mahjongcalculator.css">
+    <link rel="stylesheet" href="./css/themockingbird.css">
     <link href="./favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
+    <section id="nav" class="hidden-xs hidden-sm">
+      <ul>
+        <li data-menuanchor="profile"><a href="#profile">Profile</a></li>
+        <li data-menuanchor="mahjongcalculator"><a href="#mahjongcalculator">Mahjong Calculator</a></li>
+        <li data-menuanchor="themockingbird"><a href="#themockingbird">The Mockingbird</a></li>
+      </ul>
+    </section>
     <div id="fullpage">
-      <section class="section" id="profile">
-        <h1 class="wow fadeInDown">
-          This is Jason.
-        </h1>
-        <img id="head-pic" class="circle wow fadeIn" src="./images/jason.jpg" title="head-pic">
-        <div class="social-icons wow rotateIn">
-          <a href="https://www.linkedin.com/in/ycmjason"
-             class="wow slideInLeft">
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a href="https://www.github.com/ycmjason"
-             class="wow slideInLeft">
-            <i class="fa fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/ycmjason"
-             class="wow fadeIn">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a href="https://www.youtube.com/user/ycmjason"
-             class="wow slideInRight">
-            <i class="fa fa-youtube"></i>
-          </a>
-          <a href="https://twitter.com/ycmjason"
-             class="wow slideInRight">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </div>
-      </section>
-
-
-
-      <!--section class="section">
-        <h1>Introduction</h1>
-        <p>
-          Hello.
-        </p>
-      </section-->
-
-
+      <section class="section profile"></section>
+      <section class="section mahjongcalculator"></section>
+      <section class="section themockingbird"></section>
     </div>
+
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          verticalCentered: false,
-          anchors:['profile', 'intro']
-        });
-      });
-    </script>
+
+    <script src="js/sections_config.js"></script>
+    <script src="js/setup_fullpage.js"></script>
   </body>
 </html>
