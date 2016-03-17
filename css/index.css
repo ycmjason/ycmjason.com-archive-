@@ -4,6 +4,9 @@ body,html{
 body{
   font-size:1.5em;
 }
+.cloak{
+  display: none;
+}
 .ui-loader {
   display: none;
 }

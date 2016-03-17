@@ -32,37 +32,44 @@ foreach($sections as $section => $sectionname){
     <link href="./favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      Jason Yu &copy; <?=gmdate("Y")?> 
-    </header>
-    <nav class="hidden-xs hidden-sm">
-      <ul>
-<?php
-foreach($sections as $section => $sectionname){
-?>
-  <li data-menuanchor="<?=$section?>"><a href="#<?=$section?>"><?=$sectionname?></a></li>
-<?php
-}
-?>
-      </ul>
-    </nav>
-    <div id="fullpage">
-<?php
-foreach($sections as $section => $sectionname){
-?>
-        <section class="section <?=$section?>"><?php include("sections/".$section.".html");?></section>
-<?php
-}
-?>
-    </div>
+    <div class="cloak">
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.js"></script>
+      <!-- header -->
+      <header>
+        Jason Yu &copy; <?=gmdate("Y")?> 
+      </header>
+
+      <!-- nav -->
+      <nav class="hidden-xs hidden-sm">
+        <ul>
+<?php foreach($sections as $section => $sectionname){ ?>
+    <li data-menuanchor="<?=$section?>"><a href="#<?=$section?>"><?=$sectionname?></a></li>
+<?php } ?>
+        </ul>
+      </nav>
+
+      <!-- sections -->
+      <div id="fullpage">
+<?php foreach($sections as $section => $sectionname){ ?>
+          <section class="section <?=$section?>">
+            <?php include("sections/".$section.".html");?>
+          </section>
+<?php } ?>
+      </div>
+
+
+    </div>
 
     <script>
       //configuration for section templates
       var sections = Object.keys(<?=json_encode($sections)?>);
     </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.js"></script>
+
     <script src="js/setup_fullpage.js"></script>
+    <script src="js/index.js"></script>
+
   </body>
 </html>
