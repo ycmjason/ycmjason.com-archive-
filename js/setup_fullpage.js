@@ -1,7 +1,8 @@
 $('#fullpage').fullpage({
-  menu: '#nav',
+  menu: 'nav',
   anchors: sections,
-  paddingTop: '2em',
+  paddingTop: '50px',
+  verticalCentered: false,
   afterLoad: function(anchorLink, index){
     var reinsertClassOfChildren = function(elem){
       if($(elem).hasClass('animated')){

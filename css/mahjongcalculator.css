@@ -1,18 +1,18 @@
 section.mahjongcalculator{
-  text-align: center;
   background-image: url("../images/mahjongcalculator/mahjong_game.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center; 
 }
-section.mahjongcalculator h1{
-  margin-bottom:1em;
+section.mahjongcalculator .card{
+  margin-top:2em;
 }
-section.mahjongcalculator div.card{
-  background: rgba(255, 255, 255, .85);
-  padding: 1em;
+section.mahjongcalculator .title{
+  margin-bottom:0;
 }
-section.mahjongcalculator p.description{
-  margin-top:1em;
-  padding: 0 3em 0 3em;
+section.mahjongcalculator .description{
+  margin-top:0.2em;
+  margin-bottom:0.5em;
+}
+section.mahjongcalculator .details{
   text-align: justify;
 }

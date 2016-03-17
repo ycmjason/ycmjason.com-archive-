@@ -4,6 +4,7 @@ section.profile{
   background-image: url("//scontent-lhr3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/970962_10201730752253170_1713699782_n.jpg?oh=f1506f6e62fdb412b21147bee143bcc9&oe=5722D512");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 46% 50%; 
 }
 section.profile .filter{
   background: rgba(255, 255, 255, 0.65);
@@ -28,7 +29,7 @@ section.profile .social-icons i{
   line-height:1.6em;
   width:1.6em;
   box-sizing: content-box;
-  font-size:2.5em;
+  font-size: 2em;
   text-align: center;
   margin:0 0.1em 0 0.1em;
   background: rgba(255, 255, 255, .8);

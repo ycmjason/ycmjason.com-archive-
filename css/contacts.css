@@ -1,0 +1,8 @@
+section.contacts{
+  background: #d5d5d5;
+}
+section.contacts .card{
+  margin-top:2em;
+  /* for animation */
+  overflow:hidden;
+}

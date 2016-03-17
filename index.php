@@ -1,3 +1,11 @@
+<?php
+$sections = array(
+  "profile" => "Profile",
+  "mahjongcalculator" => "Mahjong Calculator",
+  "themockingbird" => "The Mockingbird",
+  "contacts" => "Contacts"
+);
+?>
 <html>
   <head>
     <meta name="description" content="Jason Yu is a passionate real-life problem solver and musician.">
@@ -13,29 +21,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/profile.css">
-    <link rel="stylesheet" href="./css/mahjongcalculator.css">
-    <link rel="stylesheet" href="./css/themockingbird.css">
+
+<?php
+foreach($sections as $section => $sectionname){
+?>
+    <link rel="stylesheet" href="./css/<?=$section?>.css">
+<?php
+}
+?>
     <link href="./favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
-    <section id="nav" class="hidden-xs hidden-sm">
+    <header>
+      Jason Yu &copy; <?=gmdate("Y")?> 
+    </header>
+    <nav class="hidden-xs hidden-sm">
       <ul>
-        <li data-menuanchor="profile"><a href="#profile">Profile</a></li>
-        <li data-menuanchor="mahjongcalculator"><a href="#mahjongcalculator">Mahjong Calculator</a></li>
-        <li data-menuanchor="themockingbird"><a href="#themockingbird">The Mockingbird</a></li>
+<?php
+foreach($sections as $section => $sectionname){
+?>
+  <li data-menuanchor="<?=$section?>"><a href="#<?=$section?>"><?=$sectionname?></a></li>
+<?php
+}
+?>
       </ul>
-    </section>
+    </nav>
     <div id="fullpage">
-      <section class="section profile"></section>
-      <section class="section mahjongcalculator"></section>
-      <section class="section themockingbird"></section>
+<?php
+foreach($sections as $section => $sectionname){
+?>
+        <section class="section <?=$section?>"><?php include("sections/".$section.".html");?></section>
+<?php
+}
+?>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.js"></script>
 
-    <script src="js/sections_config.js"></script>
+    <script>
+      //configuration for section templates
+      var sections = Object.keys(<?=json_encode($sections)?>);
+    </script>
     <script src="js/setup_fullpage.js"></script>
   </body>
 </html>

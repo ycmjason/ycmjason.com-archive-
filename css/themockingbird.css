@@ -1,19 +1,13 @@
 section.themockingbird{
   background-image: url('../images/themockingbird/groupphoto.jpg');
   background-size: cover;
-  background-position: 0 60%; 
+  background-position: 50% 65%; 
 }
 section.themockingbird .wrapper{
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
+  background: none;
+  box-shadow: none;
 }
 section.themockingbird img.logo{
-  opacity: 0.85;
-  width: 100%;
-}
-section.themockingbird div.card{
-  background: rgba(255, 255, 255, .85);
-  width: 100%;
-  padding: 1em;
+  width:100%;
+  opacity: .85;
 }
