@@ -22,6 +22,8 @@ $sections = array(
 
     <link rel="stylesheet" href="./css/index.css">
 
+    <link rel="image_src" href="images/jason.jpg">
+
 <?php
 foreach($sections as $section => $sectionname){
 ?>
